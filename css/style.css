@@ -1,91 +1,122 @@
+/*  czcionka dla body */
+
 body {
-  margin: 0;
-  font-family: 'Lato', sans-serif;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
 }
+
+/*  menu najwazniejesze no inline blok -  sposob wyslwietlania menu */
 
 #menu {
-  text-align: center;
-  background: #222;
-  
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    height: 50px;
+    position: fixed;
+    
 }
 
-#menu .menu-item {
-  display: inline-block;
-  padding: 25px;
-  list-style: none;
-}
-
+/* 
 #menu ul {
-  margin: 0;
+margin: 0;
+}
+#menu ul .menu-item {
+display: inline-block;
+text-align: center;
+padding: 20px;
+}
+#menu ul .menu-item a {
+color: #fff;
+text-decoration: none;
 }
 
-#menu .menu-item a{
-  text-decoration: none;
-  color: #fff;
+*/
+
+li {display: inline-block;
+    height: 100px;
+    width: 100px;
+}
+.menu-item > a {
+    color: white;
+    text-decoration: none;
+	padding: 20px;
 }
 
-#menu .menu-item a:hover{
-  color: #999;
+/*  obrazek do szerokości strony */
+
+
+img {
+    width: 100%
 }
 
-#header {
-  position: relative;
-  text-align: center;
+
+/* 
+
+#header img {
+width: 100%
+}
+#header h1 {
+position: absolute;
+top: 50%;
+width: 100%;
+text-align: center;
+color: #fff;
+text-transform: uppercase;
+margin: 0;
+transform: translateY(-50%);
 }
 
-#header img{
-  width: 100%;
+
+*/
+/*  naglowek - najważniejsze to zdefiniowac elementowi blokowemu 100% szerokosci  */
+
+#main-header-text {
+    position: absolute;
+    color: white;
+    top: 50%;
+    font-size: 60px;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
 }
 
-#header #main-header-text {
-  position: absolute;
-  top: 50%;
-  font-size: 50px;
-  font-weight: 700;
-  margin: 0 auto;
-  left: 0;
-  right: 0;
-  text-transform: uppercase;
-  color: #fff;
-  
-}
+/*  centrowanie tekstu i linka w h2 */
 
-#about {
-  margin: 30px 0;
-  padding: 0 50px;
-}
-
-#about #about-header{
-  font-size: 30px;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-#about .about-content{
-  text-align: center;
+h2, p {
+    text-align: center;
 }
 
 #contact {
-  padding: 30px 50px;
-  background: #222;
+    color: white;
+    background-color: black;
+    text-align: center;
+    height: 150px;
+    padding: 10px;
+}
+#contact a {
+    text-decoration: none;
+    color: white;
+}
+#contact-content {
+    font-style: normal;
+}
+/* 
+
+section, footer {
+text-align: center;
+padding: 40px;
+}
+#contact {
+background-color: #222;
+color: #fff;
+}
+#contact adress {
+font-style: normal;
 }
 
-#contact #contact-header{
-  font-size: 30px;
-  text-align: center;
-  margin-bottom: 20px;
-  color: #fff;
+#contact a {
+color: #fff
 }
-
-#contact #contact-content {
-  text-align: center;
-  color: #fff;
 }
-
-#contact #contact-content a {
-  color: #fff;
-}
-
-#contact #contact-content a:hover {
-  color: #999;
-}
+*/
